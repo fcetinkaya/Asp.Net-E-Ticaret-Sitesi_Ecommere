@@ -1,0 +1,112 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Admin_MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="abstract" content="E-Ticaret Bilgi Sistemi" />
+    <meta name="author" content="Fatih Çetinkaya info@fcyazilim.com www.fcyazilim.com" />
+    <meta name="copyright" content="Fatih Çetinkaya info@fcyazilim.com www.fcyazilim.com" />
+    <title>E-Ticaret Yönetim Paneli</title>
+    <link rel="stylesheet" href="Acss/layout.css" type="text/css" media="screen" />
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="Ajs/jquery-1.5.2.min.js" type="text/javascript"></script>
+    <script src="Ajs/hideshow.js" type="text/javascript"></script>
+    <script src="Ajs/jquery.equalHeight.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <header id="header">
+            <hgroup>
+                <h1 class="site_title"><a href="Yonetim.aspx">E-Ticaret Yöneticisi</a></h1>
+                <h2 class="section_title">
+                    <asp:Label ID="TepeMesajLbl" runat="server"></asp:Label></h2>
+                <div class="btn_view_site"></div>
+            </hgroup>
+        </header>
+        <!-- end of header bar -->
+        <section id="secondary_bar">
+            <div class="user">
+            </div>
+            <div class="breadcrumbs_container">
+                <article class="breadcrumbs">
+                    <a href="Yonetim.aspx">Anasayfa</a>
+                    <div class="breadcrumb_divider"></div>
+                    <a class="current">
+                        <asp:Label ID="UrlMaplbl" runat="server"></asp:Label></a>
+                </article>
+            </div>
+        </section>
+        <aside id="sidebar" class="column">
+            <hr />
+            <h3>kategori işlemleri</h3>
+            <ul class="toggle">
+                <li class="icn_new_article"><a href="KategoriIslemleri.aspx">Kategori İşlemleri</a></li>
+                <li class="icn_edit_article"><a href="KategoriDuzenleme.aspx">Kategori Düzenleme</a></li>
+            </ul>
+            <h3>ürün işlemleri</h3>
+            <ul class="toggle">
+                <li class="icn_new_article"><a href="UrunEkleme.aspx">Ürün Ekleme</a></li>
+                <li class="icn_edit_article"><a href="UrunDuzenleme.aspx">Ürün Düzenleme</a></li>
+                <li class="icn_trash"><a href="UrunSilme.aspx">Ürün Silme</a></li>
+                <li class="icn_copy_item"><a href="UrunKopyalama.aspx">Ürün Kopyalama</a></li>
+                <li class="icn_photo"><a href="UrunResimleriEkleme.aspx">Ürün Resim Ekleme</a></li>
+                <li class="icn_debit"><a href="UrunTaksitlendirme.aspx">Ürün Taksitlendirme</a></li>
+                <li class="icn_categories"><a href="UrunListesi.aspx">Ürün Listesi</a></li>
+            </ul>
+            <h3>Sipariş İşlemleri</h3>
+            <ul class="toggle">
+                <li class="icn_yeni_siparis"><a href="YeniSiparisler.aspx">Yeni Siparişler</a></li>
+                <li class="icn_bekleyen_siparis"><a href="BekleyenSiparisler.aspx">Bekleyen Siparişler</a></li>
+                <li class="icn_tamamlanan_siparis"><a href="TamamlananSiparisler.aspx">Tamamlanan Siparişler</a></li>
+                <li class="icn_iade_degisim"><a href="IadeDegisimBildirimleri.aspx">İade Değişim Bildirimleri</a></li>
+                <li class="icn_odeme_bildirim"><a href="OdemeBildirimleri.aspx">Ödeme Bildirimleri</a></li>
+                <li class="icn_kargo"><a href="KargoIslemleri.aspx">Kargo İşlemleri</a></li>
+                <li class="icn_kurye"><a href="KuryeIslemleri.aspx">Kurye İşlemleri</a></li>
+                <li class="icn_urun_talepleri"><a href="UrunTalepleri.aspx">Ürün Talepleri</a></li>
+            </ul>
+            <h3>e-bülten işlemleri</h3>
+            <ul class="toggle">
+                <li class="icn_ebulten"><a href="E-BultenUyeListesi.aspx">E-Bülten Üye Listesi</a></li>
+                <li class="icn_jump_back"><a href="EBulten_ExcelTopluAktar.aspx">Excel'den Toplu Aktar</a></li>
+            </ul>
+            <h3>ürün stok yönetimi</h3>
+            <ul class="toggle">
+                <li class="icn_stokda_kalmayan"><a href="StokdaKalmayanUrunler.aspx">Stokda Kalmayan Ürünler</a></li>
+                <li class="icn_categories"><a href="StokdaKalmayanListesi.aspx">Stokda Kalmayan Ürünler Listesi</a></li>
+                <li class="icn_satis_yapilamayacak"><a href="SatisYapilmayacakUrunler.aspx">Satışı Yapılmayacak Ürünler</a></li>
+                <li class="icn_categories"><a href="SatisYapilmayacakListesi.aspx">Satışı Yapılmayacak Ürünler Listesi</a></li>
+            </ul>
+            <h3>yönetim</h3>
+            <ul class="toggle">
+                <li class="icn_trash"><a href="SilinenUrunler.aspx">Silinen Ürünler</a></li>
+                <li class="icn_settings"><a href="HaberSistemi.aspx">Anasayfa Haber Sistemi</a></li>
+                <li class="icn_security"><a href="SifreDegistirme.aspx">Şifre İşlemleri</a></li>
+               
+                <li class="icn_Web">
+                    <asp:HyperLink ID="E_TicaretSitesiLink" runat="server" Text="E-Ticaret Sitesi" Target="_blank"></asp:HyperLink>
+                </li>
+                 <li class="icn_Iletisim"><a href="IletisimMesajlari.aspx">İletişim Mesajları</a></li>
+                 <li class="icn_logout">
+                    <asp:LinkButton ID="Cikis" runat="server" Text="Çıkış"
+                        OnClick="Cikis_Click"></asp:LinkButton></li>
+
+            </ul>
+            <footer>
+                <hr />
+                <p><strong>E-Ticaret Yönetim Sistemi</strong></p>
+                <p>Copyright &copy; 2013 <a href="http://www.gelisimsoft.com" target="_blank">Gelişimsoft Yazılım</a></p>
+            </footer>
+        </aside>
+        <!-- end of sidebar -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

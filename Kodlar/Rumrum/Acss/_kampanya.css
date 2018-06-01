@@ -1,0 +1,59 @@
+﻿html, body{height: 100%;}
+body{ font:12px/20px Helvetica, Arial, sans-serif; color: #3f4950;}
+h2{ font-size:18px; margin-bottom:50px; clear:both }
+/*Pricing box*/
+.pricing_box  { border: 1px solid #ccc; float: left; text-align: center; padding: 0 0 20px 0; margin-left:-1px; box-shadow: 0 2px 10px -4px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0 2px 10px -4px rgba(0, 0, 0, 0.5); background: #fff;}
+.pricing_box.radius-left { -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px; -moz-border-top-left-radius: 5px; -webkit-border-bottom-left-radius: 5px; border-bottom-left-radius: 5px; -moz-border-bottom-left-radius: 5px;}
+.pricing_box.radius-right { -webkit-border-top-right-radius: 5px; border-top-right-radius: 5px; -moz-border-top-right-radius: 5px; -webkit-border-bottom-right-radius: 5px; border-bottom-right-radius: 5px; -moz-border-bottom-right-radius: 5px;}
+.pricing_box .header  { text-shadow: 0 1px 1px #fff; border-bottom: 1px solid #ccc; background: url(../images/price.bg.png) repeat; -webkit-border-top-right-radius: 5px; border-top-right-radius: 5px; -moz-border-top-right-radius: 5px; -webkit-border-top-left-radius: 5px; border-top-left-radius: 5px; -moz-border-top-left-radius: 5px;}
+.pricing_box .header { width: 100%; height: 68px; }
+.pricing_box .header span { position: relative; top: 20px; font-size: 16px; font-weight: bold; line-height: 28px;}
+.pricing_box .header span.info { position: relative; font-size: 12px; font-weight: normal; top: 2px; display: block; color: gray; } 
+.pricing_box p { line-height: 28px;}
+.pricing_box ul { list-style: none; margin: 0 0 15px 0!important; text-align: left;}
+
+.cols-2 .pricing_box { width: 49.8%; margin-bottom:50px; }
+.cols-3 .pricing_box  { width: 33%;  margin-bottom:50px;}
+.cols-4 .pricing_box { width: 24.8%; font-size: 1em; }
+.cols-5 .pricing_box { width: 19.5%; font-size: 0.9em;}
+
+.pricing_box ul li { line-height: 4em; padding-left: 20px!important; margin-left:0; list-style-type: none!important;}
+.pricing_box ul li.odd { background: #F9F9F9;}
+.pricing_box ul li.even { background: #fff;}
+.pricing_box strong { background: url(../images/price.sprite.png) no-repeat 0 -9999px; height: 12px; padding-left: 20px; font-style: normal; color: gray; }
+.pricing_box strong.no { background-position: 0 0;}
+.pricing_box strong.yes { background-position: 0 -15px;}
+.pricing_box strong.single { background-position: 0 -30px; }
+.pricing_box strong.unlim { background-position: 0 -45px; }
+.pricing_box strong.more{ background: url(../images/price.more.png) no-repeat 0 0; height: 20px; width: 20px; cursor: pointer; float: right; padding: 0; margin: 14px 14px 0 0;}
+.pricing_box strong.nopad { padding: 0;}
+.pricing_box h3{ margin: 20px 0; font-size: 22px; display: block;}
+.pricing_box h3 em{ font-size: 12px; font-weight: normal;}
+
+.pricing_box p.button { height: 40px; background: url(../images/price.readmore.png) no-repeat left 0; float: none; }
+.pricing_box p.button a { font-size: 16px; font-weight:bold; line-height: 40px; background: url(../images/price.readmore.png) no-repeat right -40px; padding:0 40px; }
+
+.pricing_box p.button:hover {background-position:left -80px;}
+.pricing_box p.button a:hover{background-position:right -120px;}
+
+.pricing_box.large { position: relative; z-index: 9; margin-top: -20px; -moz-box-shadow: 0 1px 10px #cbcbcb; -webkit-box-shadow: 0 1px 10px #cbcbcb; box-shadow: 0px 1px 10px #cbcbcb; padding: 0 0 40px 0; border-radius: 5px;}
+.pricing_box.large .header { color: #303E0E; text-shadow:0 1px 0 #C7DD90; height: 88px; background: url(../images/price.bg.signup.png) repeat; border-bottom: 1px solid #b2d850;}
+.pricing_box.large .header  span{ top: 30px; }
+.pricing_box.large .header  span.info{ top: 14px; color: #576e1f; text-shadow:none; }
+
+.pricing_box.large p.button { background-position:left -160px;}
+.pricing_box.large p.button a{ background-position:right -200px; color: #303E0E; text-shadow:0 1px 0 #C7DD90;  }
+
+.pricing_box.large p.button:hover { background-position:left -240px;}
+.pricing_box.large p.button a:hover{ background-position:right -280px; }
+
+
+/*Buttons*/
+p.button { margin: 0 20px 0 0; padding: 0; display: inline-block;}
+p.button a{ float: left; line-height:32px; *line-height:28px; margin: 0 -20px 0 0!important; padding: 0 20px; height:100%; border: none; cursor: pointer; color: #3f4950; font-size: 12px; font-family: "Oswald"; text-shadow: 0 1px 0 #fff; text-decoration:none }
+p.button a:hover{text-decoration: none;}
+
+/* Text elements */
+*{ margin: 0; padding: 0; outline: none; }
+
+.cols-5 { width: 950px; }

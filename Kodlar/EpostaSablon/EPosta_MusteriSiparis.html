@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Sipariş Onayı</title>
+</head>
+<body>
+    <div id="AnaDiv" style="width: 1000px; margin: 0px auto; font-family: Calibri;">
+        <div id="UstReklamBannerDiv" style="width: 750px; height: 80px; float: left; border: 1px solid black; padding: 20px 25px">
+            <div id="SolKisimBannerDiv" style="width: 374px; height: 80px; float: left; border-right: 1px solid black;">
+                <a href="<%SolBanner_Link%>">
+                    <img alt="Sol Banner" src="<%SolBanner%>" border="0" /></a>
+            </div>
+            <div id="SagKisimBannerDiv" style="width: 375px; height: 80px; float: left; text-align: right;">
+                <a href="<%SagBanner_Link%>">
+                    <img alt="Sag Banner" src="<%SagBanner%>" border="0" /></a>
+            </div>
+        </div>
+        <div id="AltKisimDetay" style="width: 800px; height: auto; float: left; border: 1px solid #006bff; margin-top: 20px;">
+            <div id="UstKisimDiv" style="width: 790px; height: 20px; float: left; padding: 10px 5px; background-color: #9fd2e8; font-weight: bold;">
+                <div id="SiteAdiDiv" style="float: left; text-align: left;">
+                    <a href="<%SiteAdresi%>"><%SiteAdi%></a> Sipariş Onayı
+                </div>
+                <div id="TarihDiv" style="float: right; text-align: right;">
+                    <span style="text-align: right;"><%Tarih%></span>
+                </div>
+            </div>
+            <span style="font-weight: bold;">Sn <%MusteriAdi%></span>
+            <br />
+            <br />
+            <label id="Site_Isim"><%SiteAdi%></label>'a göstermiş olduğunuz ilgi ve güvenden dolayı teşekkür ediyoruz.
+            <br />
+            <br />
+            Sipariş numaranız <span style="font-weight: bold;"><%SiparisNo%></span>. Siparişinizle ilgili tüm sorunlarınızda bu numarayı belirtmeyi unutmayınız.<br />
+            Siparişiniz&#39;de bulunan ürünler aşağıdaki gibidir;&nbsp;
+            <table width="800" border="1" cellpadding="4" cellspacing="0" bordercolor="EDF5E3">
+                <tr bgcolor="#999999">
+                    <td align="center" style="height: 16px; width: 400px;"><span color="#FFFFFF">Ürünler</span></td>
+                    <td align="center" style="height: 16px; width: 100px;"><span color="#FFFFFF">Fiyat</span></td>
+                    <td align="center" style="height: 16px; width: 100px;"><span color="#FFFFFF">Adet</span></td>
+                    <td align="center" style="height: 16px; width: 100px;"><span color="#FFFFFF">Toplam</span></td>
+                </tr>
+                <%TabloDetaylari%>
+            </table>
+            <br />
+            <div id="TabloAltKisimDiv" style="width: 800px; float: left; height: 210px; margin-top: 10px;">
+                <div id="ToplamDiv" style="width: 800px; float: left; height: 20px;">
+                    <div id="Toplam_Fiyat_LblDiv" style="width: 150px; height: 20px; float: right;">
+                        <%Toplam%>
+                    </div>
+                    <div id="ToplamLblDiv" style="width: 100px; height: 20px; float: right; font-weight: bold;">
+                        Toplam
+                    </div>
+                </div>
+                <div id="KDV_Div" style="width: 800px; float: left; height: 20px;">
+                    <div id="KDV_LBL_Div" style="width: 150px; height: 20px; float: right;">
+                        <%KDV%>
+                    </div>
+                    <div id="KDVLbl_Div" style="width: 100px; height: 20px; float: right; font-weight: bold;">
+                        KDV
+                    </div>
+                </div>
+                <div id="Kargo_Div" style="width: 800px; float: left; height: 20px;">
+                    <div id="Kargo_LBL_Div" style="width: 150px; height: 20px; float: right;">
+                        <%KargoUcreti%>
+                    </div>
+                    <div id="Kargo_Ucreti_Div" style="width: 100px; height: 20px; float: right; font-weight: bold;">
+                        Kargo Ücreti
+                    </div>
+                </div>
+                <div id="Genel_Toplam_Div" style="width: 800px; float: left; height: 20px;">
+                    <div id="Genel_LbL_Toplam_Div" style="width: 150px; height: 20px; float: right;">
+                        <%GenelToplam%>
+                    </div>
+                    <div id="GenelToplam_Div" style="width: 100px; height: 20px; float: right; font-weight: bold;">
+                        Genel Toplam
+                    </div>
+                </div>
+                <div id="Odeme_Secenekleri_Div" style="width: 800px; float: left; height: 20px; margin: 20px 0px;">
+                    <div id="Odeme_Baslik_Div" style="width: 400px; float: right; height: 20px; background-color: #9fd2e8; font-weight: bold;">
+                        Ödeme Şekli
+                    </div>
+                    <div id="KrediKarti_Div" style="width: 800px; float: left; height: 20px;">
+                        <div id="KrediKarti_Cekilen_Div" style="width: 170px; height: 20px; float: right;">
+                            <%KKTutar%> (<%TS%> Taksit)
+                        </div>
+                        <div id="KrediKarti_Cekilen_Lbl_Div" style="width: 230px; height: 20px; float: right;">
+                            Kredi Kartınızdan Çekilecek Tutar
+                        </div>
+                    </div>
+                    <div id="Havale_EFT_Div" style="width: 800px; float: left; height: 20px;">
+                        <div id="Havale_EFT_Tuari_Div" style="width: 160px; height: 20px; float: right;">
+                            <%HavaleTutari%>
+                        </div>
+                        <div id="Havale_EFTLbl_Div" style="width: 240px; height: 20px; float: right;">
+                            Havale Edilecek Tutar
+                        </div>
+                    </div>
+                    <div id="Kapida_Odenecekler_Div" style="width: 800px; float: left; height: 20px;">
+                        <div id="KapidaOdecenekler_Div" style="width: 160px; height: 20px; float: right;">
+                            <%KapidaTutari%>
+                        </div>
+                        <div id="Kapida_Odecenekler_Lbl_Div" style="width: 240px; height: 20px; float: right;">
+                            Kapıda Ödenecek Tutar
+                        </div>
+                    </div>
+                    <div id="Paypal_Odeme_Div" style="width: 800px; float: left; height: 20px;">
+                        <div id="Paypal_Odeme_Lbl_Div" style="width: 160px; height: 20px; float: right;">
+                            <%PaypalTutari%>
+                        </div>
+                        <div id="PaypalOdeme_Div" style="width: 240px; height: 20px; float: right;">
+                            Paypal'dan Çekilecek Tutar
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="KargoBilgileri_Div" style="width: 800px; float: left; height: 150px; margin-top: 10px;">
+                <span style="font-weight: bold;">Kargo : <%KargoAdi%></span>
+                <br />
+                <div id="AdresBilgileri_Div" style="width: 800px; float: left; height: 100px; margin: 10px 0px;">
+                    <div id="TeslimatAdresi_Div" style="width: 398px; float: left; height: 100px; margin-right: 4px;">
+                        <div id="TeslimatAdresi_Baslik_Div" style="width: 398px; float: left; height: 20px; background-color: #9fd2e8; font-weight: bold;">
+                            Teslimat Adresi
+                        </div>
+                        <%TeslimatAdresi_AdSoyad%><br />
+                        <%TeslimatAdresi_Adres%><br />
+                        <%TeslimatAdresi_Ilce%><br />
+                        <%TeslimatAdresi_Sehir%><br />
+                        <%TeslimatAdresi_CepTelefon%><br />
+                    </div>
+                    <div id="FaturaAdresi_Div" style="width: 398px; float: left; height: 100px;">
+                        <div id="FaturaAdresi_Baslik_Div" style="width: 398px; float: left; height: 20px; background-color: #9fd2e8; font-weight: bold;">
+                            Fatura Adresi
+                        </div>
+                        <%FaturaAdresi_AdSoyad%><br />
+                        <%FaturaAdresi_Adres%><br />
+                        <%FaturaAdresi_Ilce%><br />
+                        <%FaturaAdresi_Sehir%><br />
+                        <%FaturaAdresi_CepTelefonu%><br />
+                    </div>
+                </div>
+            </div>
+            <div id="SiparisTakip_div" style="width: 800px; float: left; height: 100px; margin: 10px 0px; margin-top: 10px;">
+                <ul>
+                    <li>Siparişiniz ile ilgili süreci <%Sipari_Takip_Link%> adresinden takip edebilirsiniz.</li>
+                    <li>Hesabım sayfasına gitmek için <a style="color: black;" href="<%Hesabim%>" title="Hesabım">tıklayın</a></li>
+                    <li><a style="color: red; font-weight: bold;" href="<%IadeFormu%>">Ürünü iade etmeden önce lütfen okuyunuz.</a></li>
+                </ul>
+            </div>
+            <label id="Sirket_Adi"><%SiteAdi%></label>' tercih ettiğiniz için teşekkürler.<br />
+            <a style="color: black;" href="<%SiteAdresi%>"><%SiteAdresi%></a>
+            <br />
+            <br />
+            <br />
+            <br />
+        </div>
+    </div>
+</body>
+</html>

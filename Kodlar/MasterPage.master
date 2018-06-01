@@ -1,0 +1,500 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="user-scalable=no, width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-9" />
+    <meta id="metakeywords" name="keywords" content="iphone orjinal aksesuar, blackberry orjinal aksesuar, orjinal cep telefonu aksesuarları, cep telefonu aksesuarları, htc orjinal aksesuar, cep telefon aksesuarları, samsung cep telefonu aksesuarları, cep telefonu kapakları, cep telefonu kılıfları, telefon aksesuar, cep telefonu aksesuarları fiyatları,cep takı, cep telefonu takısı, cep telefonu takıları" />
+    <meta id="metaDescription" name="description" content="Cep Telefonu Takı ve Aksesuarları" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Cache-Control" content="max-age=0" />
+    <meta name="revisit-after" content="1 Days" />
+    <meta name="imagetoolbar" content="no" />
+    <meta name="abstract" content="Cep Telefonu Takı ve Aksesuarları" />
+    <meta name="author" content="Fatih Çetinkaya info@fcyazilim.com www.fcyazilim.com" />
+    <meta name="copyright" content="Copyright 2014 (c)www.gelisimsoft.com | Tüm hakları saklıdır  |" />
+    <meta name="classification" content="Shopping,Accessories,Mobile" />
+    <meta name="rating" content="All" />
+    <meta name="robots" content="all" />
+    <meta name="robots" content="NOODP,index, follow" />
+    <meta name="msvalidate.01" content="2DF15775A505785865E8088EB54243C6" />
+    <link href="images/ik.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Css/reset.css" rel="stylesheet" media="screen, print" />
+    <link href="Css/FcyazilimCss.css" rel="stylesheet" media="screen, print" />
+    <title>Ceptaki.Com | Cep Telefonu Aksesuarı, Kılıflar, Şarj Aletleri, Kulaklıklar, Koruyucu Filmler, Kablolar</title>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-50853464-1', 'ceptaki.com');
+        ga('send', 'pageview');
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <div id="AnaDiv" style="width: 1000px; margin: 0 auto;">
+            <div id="CocukDiv">
+                <div class="UstKisimLogoMenuDiv">
+                    <div id="LogoDiv">
+                        <a href="Default.aspx" alt="Cep Takı ve Aksesuarı">
+                            <img alt="Cep Takı ve Aksesuarı" src="Image/logo.jpg" />
+                        </a>
+                    </div>
+                    <div id="UstKisimSagLinkveIlanVer">
+                        <%--  <div id="AltLinkler">--%>
+                        <div class="ust_menu">
+                            <div class="UstSag_Linkler">
+                                <a class="MenuLink" href="Yardim.aspx">Yardım</a>
+                            </div>
+                            <div class="UstSag_Linkler">
+                                <span style="font-size: 20px">|</span>
+                            </div>
+                            <div id="UyeGirisDiv" runat="server">
+                                <div class="UstSag_Linkler">
+                                    <a class="MenuLink" href="UyeOl.aspx">Üye Ol</a>
+                                </div>
+                                <div class="UstSag_Linkler">
+                                    <span style="font-size: 20px">|</span>
+                                </div>
+                                <div class="UstSag_Linkler">
+                                    <a class="MenuLink" href="Giris.aspx">Üye Girişi</a>
+                                </div>
+                            </div>
+                            <div id="GirisOnayDiv" runat="server" visible="false">
+                                <div class="UstSag_Linkler">
+                                    <asp:LinkButton ID="CikisLinkBtn" runat="server" CssClass="MenuLink" OnClick="CikisLinkBtn_Click"></asp:LinkButton>
+                                </div>
+                                <div class="UstSag_Linkler">
+                                    <span style="font-size: 20px">|</span>
+                                </div>
+                                <div class="UstSag_Linkler">
+                                    <a class="MenuLink" href="Hesabim.aspx">Hesabım</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ust_menu">
+                            <div class="UstSag_Linkler">
+                                <a class="Sepet" href="Sepet.aspx">Sepet (<asp:Label ID="SepetAdetLbl" runat="server"></asp:Label>
+                                    Ürün)
+                                </a>
+                            </div>
+                        </div>
+                        <%--</div>--%>
+                    </div>
+                </div>
+                <div class="UstKisimAltMenuDiv">
+                    <div class="AramaBox">
+                        <asp:TextBox ID="AramaBox" runat="server" CssClass="SagAramabox" placeholder="Aramak İstediğiniz Ürün"></asp:TextBox><asp:Button ID="AramaBtn" runat="server" Text="Ara" CssClass="buttonum" OnClick="AramaBtn_Click" />
+                    </div>
+                    <div id="menu">
+                        <ul>
+                            <li><a href="#" class="drop">KORUYUCU FİLMLER</a>
+                                <div class="dropdown_3columns">
+                                    <div class="col_3">
+                                        <h2>Telefonunuzu Seçin</h2>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="apple-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">APPLE</a></li>
+                                            <li><a href="avea-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">AVEA</a></li>
+                                            <li><a href="blackberry-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">BLACKBERRY</a></li>
+                                            <li><a href="generalmobile-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">GENERAL MOBILE</a></li>
+                                            <li><a href="htc-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">HTC</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="lenovo-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">LENOVO</a></li>
+                                            <li><a href="lg-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">LG</a></li>
+                                            <li><a href="motorola-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">MOTOROLA</a></li>
+                                            <li><a href="nokia-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">NOKIA</a></li>
+                                            <li><a href="samsung-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">SAMSUNG</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="sonyericsson-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">SONY ERICSSON</a></li>
+                                            <li><a href="spada-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">SPADA</a></li>
+                                            <li><a href="turkcell-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">TURKCELL</a></li>
+                                            <li><a href="vodafone-cep-telefonu-aksesuari-kategorisi-cam-ekran-koruyucu-filmler.aspx">VODAFONE</a></li>
+                                            <li><a href="TumModeller.aspx">Diğer Markalar</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_3">
+                                        <h2>Ekran Koruyucu Film Çeşitleri</h2>
+                                    </div>
+                                    <div class="col_3">
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-cam-ekran-koruyucu-filmler.aspx">
+                                            <img src="img/Mobil/Filmler/cam_Ekran_Koruyucu.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-darbe-emici-koruyucu-filmler.aspx">
+                                            <img src="img/Mobil/Filmler/DarbeEmici_EkranKoruyucu_Film.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-mat-ekran-koruyucu-filmler.aspx">
+                                            <img src="img/Mobil/Filmler/MatEkran_Koruyucu_Film.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <p></p>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-onarka-koruyucu-filmler.aspx">
+                                            <img src="img/Mobil/Filmler/OnArka_Koruyucu_Film.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-seffaf-ekran-koruyucu-filmler.aspx">
+                                            <img src="img/Mobil/Filmler/SeffafEkran_Koruyucu_Film.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-tam-govde-koruyucu-filmler.aspx">
+                                            <img src="img/Mobil/Filmler/TamGovde_Koruyucu_Film.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <p><a href="cep-telefonu-aksesuarlari-kategorisi-ekran-koruyucu-filmler.aspx">Tüm Ekran koruyucu filmler...</a></p>
+                                    </div>
+                                </div>
+                                <!-- End 3 columns container -->
+                            </li>
+                            <li><a href="#" class="drop">KILIFLAR</a>
+                                <div class="dropdown_3columns">
+                                    <div class="col_3">
+                                        <h2>Telefonunuzu Seçin</h2>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="apple-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">APPLE</a></li>
+                                            <li><a href="avea-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">AVEA</a></li>
+                                            <li><a href="blackberry-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">BLACKBERRY</a></li>
+                                            <li><a href="generalmobile-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">GENERAL MOBILE</a></li>
+                                            <li><a href="htc-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">HTC</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="lenovo-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">LENOVO</a></li>
+                                            <li><a href="lg-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">LG</a></li>
+                                            <li><a href="motorola-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">MOTOROLA</a></li>
+                                            <li><a href="nokia-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">NOKIA</a></li>
+                                            <li><a href="samsung-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">SAMSUNG</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="sonyericsson-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">SONY ERICSSON</a></li>
+                                            <li><a href="spada-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">SPADA</a></li>
+                                            <li><a href="turkcell-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">TURKCELL</a></li>
+                                            <li><a href="vodafone-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">VODAFONE</a></li>
+                                            <li><a href="TumModeller.aspx">Diğer Markalar</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_3">
+                                        <h2>Popüler Cep Telefonu Kılıf Çeşitleri</h2>
+                                    </div>
+                                    <div class="col_3">
+                                        <a href="apple-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">
+                                            <img src="img/Mobil/Kiliflar/Iphone_Kiliflari.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="samsung-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">
+                                            <img src="img/Mobil/Kiliflar/Samsung_Kiliflari.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="sonyerricson-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">
+                                            <img src="img/Mobil/Kiliflar/Sony_Kiliflari.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <p></p>
+                                        <a href="htc-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">
+                                            <img src="img/Mobil/Kiliflar/htc_Kiliflari.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="nokia-cep-telefonu-aksesuari-kategorisi-cep-telefonu-kiliflari.aspx">
+                                            <img src="img/Mobil/Kiliflar/Nokia_Kiliflari.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="TumModeller.aspx">
+                                            <img src="img/Mobil/Kiliflar/Diger_Markalar.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <p><a href="cep-telefonu-aksesuarlari-kategorisi-cep-telefonu-kiliflari.aspx">Tüm cep telefonu kılıfları...</a></p>
+                                    </div>
+                                </div>
+                                <!-- End 3 columns container -->
+                            </li>
+                            <li><a href="#" class="drop">ŞARJ ALETLERİ</a>
+                                <div class="dropdown_3columns">
+                                    <div class="col_3">
+                                        <h2>Telefonunuzu Seçin</h2>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="apple-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">APPLE</a></li>
+                                            <li><a href="avea-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">AVEA</a></li>
+                                            <li><a href="blackberry-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">BLACKBERRY</a></li>
+                                            <li><a href="generalmobile-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">GENERAL MOBILE</a></li>
+                                            <li><a href="htc-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">HTC</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="lenovo-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">LENOVO</a></li>
+                                            <li><a href="lg-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">LG</a></li>
+                                            <li><a href="motorola-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">MOTOROLA</a></li>
+                                            <li><a href="nokia-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">NOKIA</a></li>
+                                            <li><a href="samsung-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">SAMSUNG</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="sonyericsson-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">SONY ERICSSON</a></li>
+                                            <li><a href="spada-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">SPADA</a></li>
+                                            <li><a href="turkcell-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">TURKCELL</a></li>
+                                            <li><a href="vodafone-cep-telefonu-aksesuari-kategorisi-sarj-aletleri.aspx">VODAFONE</a></li>
+                                            <li><a href="TumModeller.aspx">Diğer Markalar</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_3">
+                                        <h2>Cep Telefonu Şarj Aletleri</h2>
+                                    </div>
+                                    <div class="col_3">
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-arac-sarj-aletleri.aspx">
+                                            <img src="img/Mobil/Sarjlar/Arac_SarjAletleri.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-ev-sarj-aletleri.aspx">
+                                            <img src="img/Mobil/Sarjlar/Ev_SarjAletleri.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-masaustu-sarj-aletleri.aspx">
+                                            <img src="img/Mobil/Sarjlar/Masaustu_SarjAletleri.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <p></p>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-tablet-sarj-aletleri.aspx">
+                                            <img src="img/Mobil/Sarjlar/Tablet_SarjAletleri.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-tasinabilir-sarj-aletleri.aspx">
+                                            <img src="img/Mobil/Sarjlar/Tasinabilir_SarjAletleri.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-yurtdisi-sarj-aletleri.aspx">
+                                            <img src="img/Mobil/Sarjlar/Yurtdisi_SarjAletleri.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <p><a href="TumModeller.aspx">Tüm Şarj çeşitleri...</a></p>
+                                    </div>
+                                </div>
+                                <!-- End 3 columns container -->
+                            </li>
+                            <li><a href="#" class="drop">KABLOLAR</a>
+                                <div class="dropdown_3columns">
+                                    <div class="col_3">
+                                        <h2>Telefonunuzu Seçin</h2>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="apple-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">APPLE</a></li>
+                                            <li><a href="avea-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">AVEA</a></li>
+                                            <li><a href="blackberry-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">BLACKBERRY</a></li>
+                                            <li><a href="generalmobile-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">GENERAL MOBILE</a></li>
+                                            <li><a href="htc-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">HTC</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="lenovo-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">LENOVO</a></li>
+                                            <li><a href="lg-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">LG</a></li>
+                                            <li><a href="motorola-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">MOTOROLA</a></li>
+                                            <li><a href="nokia-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">NOKIA</a></li>
+                                            <li><a href="samsung-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">SAMSUNG</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="sonyericsson-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">SONY ERICSSON</a></li>
+                                            <li><a href="spada-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">SPADA</a></li>
+                                            <li><a href="turkcell-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">TURKCELL</a></li>
+                                            <li><a href="vodafone-cep-telefonu-aksesuari-kategorisi-kablo-ve-donusturuculer.aspx">VODAFONE</a></li>
+                                            <li><a href="TumModeller.aspx">Diğer Markalar</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_3">
+                                        <h2>Cep Telefonu Kablo ve Dönüştücüler</h2>
+                                    </div>
+                                    <div class="col_3">
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-kamera-baglanti-adaptorleri.aspx">
+                                            <img src="img/Mobil/Kablolar/Baglanti_Adaptorleri.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-data-kablolari.aspx">
+                                            <img src="img/Mobil/Kablolar/Data_Kablolari.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-goruntu-aktarim-cihazlari.aspx">
+                                            <img src="img/Mobil/Kablolar/Goruntu_Aktarim.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <p></p>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-hdmi-adaptorleri.aspx">
+                                            <img src="img/Mobil/Kablolar/hdmi_adaptorleri.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-kulaklik-kablolari.aspx">
+                                            <img src="img/Mobil/Kablolar/Kulaklik_Kablolari.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuarlari-kategorisi-usb-baglanti-kitleri.aspx">
+                                            <img src="img/Mobil/Kablolar/Usb_Baglanti_Kitleri.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <p><a href="TumModeller.aspx">Tüm kablo ve dönüştürücü çeşitleri...</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- End 3 columns container -->
+                            <li><a href="#" class="drop">TÜM KATEGORİLER</a>
+                                <div class="dropdown_3columns align_right">
+                                    <div class="col_3">
+                                        <h2>Telefonunuzu Seçin</h2>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="apple-cep-telefonu-aksesuarlari.aspx">APPLE</a></li>
+                                            <li><a href="avea-cep-telefonu-aksesuarlari.aspx">AVEA</a></li>
+                                            <li><a href="blackberry-cep-telefonu-aksesuarlari.aspx">BLACKBERRY</a></li>
+                                            <li><a href="generalmobile-cep-telefonu-aksesuarlari.aspx">GENERAL MOBILE</a></li>
+                                            <li><a href="htc-cep-telefonu-aksesuarlari.aspx">HTC</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="lenovo-cep-telefonu-aksesuarlari.aspx">LENOVO</a></li>
+                                            <li><a href="lg-cep-telefonu-aksesuarlari.aspx">LG</a></li>
+                                            <li><a href="motorola-cep-telefonu-aksesuarlari.aspx">MOTOROLA</a></li>
+                                            <li><a href="nokia-cep-telefonu-aksesuarlari.aspx">NOKIA</a></li>
+                                            <li><a href="samsung-cep-telefonu-aksesuarlari.aspx">SAMSUNG</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_1">
+                                        <ul class="greybox">
+                                            <li><a href="sonyericsson-cep-telefonu-aksesuarlari.aspx">SONY ERICSSON</a></li>
+                                            <li><a href="spada-cep-telefonu-aksesuarlari.aspx">SPADA</a></li>
+                                            <li><a href="turkcell-cep-telefonu-aksesuarlari.aspx">TURKCELL</a></li>
+                                            <li><a href="vodafone-cep-telefonu-aksesuarlari.aspx">VODAFONE</a></li>
+                                            <li><a href="TumModeller.aspx">Diğer Markalar</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col_3">
+                                        <h2>Cep Telefonu </h2>
+                                    </div>
+                                    <div class="col_3">
+                                        <a href="cep-telefonu-aksesuari-kategorisi-oto-arac-urunleri.aspx">
+                                            <img src="img/Mobil/Diger/Arac_Kitleri.jpg" class="img_left imgshadow" alt="Araç Kitleri" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuari-kategorisi-bataryalar.aspx">
+                                            <img src="img/Mobil/Diger/Bataryalar.jpg" class="img_left imgshadow" alt="Bataryalar" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuari-kategorisi-hafiza-kartlari.aspx">
+                                            <img src="img/Mobil/Diger/Hafiza_Kartlari.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <p></p>
+                                        <a href="cep-telefonu-aksesuari-kategorisi-kulakliklar.aspx">
+                                            <img src="img/Mobil/Diger/Kullakliklar.jpg" class="img_left imgshadow" alt="Kulaklıklar" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuari-kategorisi-stylus-kalemler.aspx">
+                                            <img src="img/Mobil/Diger/Stylus_Kalemler.jpg" class="img_left imgshadow" alt="" />
+                                        </a>
+                                        <a href="cep-telefonu-aksesuari-kategorisi-diger-urunler.aspx">
+                                            <img src="img/Mobil/Diger/Diger_Urunler.jpg" class="img_left imgshadow" alt="Diğer Ürünler" />
+                                        </a>
+                                        <p><a href="TumModeller.aspx">Tüm kablo ve dönüştürücü çeşitleri...</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="Footer">
+                <div class="Footer_Icerik">
+                    <div id="KurumsalDiv" class="Footer_Linkler">
+                        <div class="Footer_Linkler_Baslik">
+                            Kurumsal
+                        </div>
+                        <div class="Footer_Linkler_Icerik">
+                            <ul>
+                                <li><a href="Hakkimizda.aspx" title="Hakkımızda" class="Footer_Link">Hakkımızda</a></li>
+                                <li><a href="BankaHesap.aspx" title=" Banka Hesapları" class="Footer_Link">Banka Hesapları</a></li>
+                                <li><a href="InsanKaynaklari.aspx" title="İnsan Kaynakları" class="Footer_Link">İnsan Kaynakları</a></li>
+                                <li><a href="TedarikciBasvurusu.aspx" title="Tedarikçi Başvurusu" class="Footer_Link">Tedarikçi Başvurusu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="MusteriHizmetleriDiv" class="Footer_Linkler">
+                        <div class="Footer_Linkler_Baslik">
+                            Müşteri Hizmetleri
+                        </div>
+                        <div class="Footer_Linkler_Icerik">
+                            <ul>
+                                <li><a href="Iletisim.aspx" title="İletişim" class="Footer_Link">İletişim</a></li>
+                                <li><a href="KargoBilgileri.aspx" title="Kargo bilgileri" class="Footer_Link">Kargo Bilgileri</a></li>
+                                <li><a href="KurumsalSatis.aspx" title="Kurumsal Satış" class="Footer_Link">Kurumsal Satış</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="SiparisIslemleriDiv" class="Footer_Linkler">
+                        <div class="Footer_Linkler_Baslik">
+                            Sipariş İşlemleri
+                        </div>
+                        <div class="Footer_Linkler_Icerik">
+                            <ul>
+                                <li><a href="Sepet.aspx" title="Sepetiniz" class="Footer_Link">Sepetiniz</a></li>
+                                <li><a href="SiparisTakibi.aspx" title="Sipariş Takip" class="Footer_Link">Sipariş Takip</a></li>
+                                <li><a href="OdemeBildirimFormu.aspx" title="Ödeme Bildirim Formu" class="Footer_Link">Ödeme Bildirim Formu</a></li>
+                                <li><a href="IadeDegisimFormu.aspx" title="İade / Değişim Formu" class="Footer_Link">İade / Değişim Formu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="YardimDiv" class="Footer_Linkler">
+                        <div class="Footer_Linkler_Baslik">
+                            Yardım
+                        </div>
+                        <div class="Footer_Linkler_Icerik">
+                            <ul>
+                                <li><a href="SatisSozlesmesi.aspx" title="Satış Sözleşmesi" class="Footer_Link">Satış Sözleşmesi</a></li>
+                                <li><a href="OdemeSecenekleri.aspx" title="Ödeme Seçenekleri" class="Footer_Link">Ödeme Seçenekleri</a></li>
+                                <li><a href="KargoTakibi.aspx" title="Kargo Takibi" class="Footer_Link">Kargo Takibi</a></li>
+                                <li><a href="GuvenliETicaret.aspx" title="Güvenli Elektoronik Ticaret" class="Footer_Link">Güvenli E- Ticaret</a></li>
+                                <li><a href="UyelikSozlesmesi.aspx" title="Üyelik Sözleşmesi" class="Footer_Link">Üyelik Sözleşmesi</a></li>
+                                <li><a href="KosulsuzIade.aspx" title="Koşulsuz İade" class="Footer_Link">Koşulsuz İade</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="BiziTakipEdinDiv" class="Footer_Linkler">
+                        <div class="Footer_Linkler_Baslik">
+                            Bizi Takip Edin
+                        </div>
+                        <div class="Footer_Linkler_Icerik">
+                            <ul>
+                                <li>
+                                    <img src="image/fb.png" alt="" />
+                                    <a href="https://www.facebook.com" title="Facebook" class="Footer_Link" target="_blank">Facebook</a></li>
+                                <li>
+                                    <img src="image/twitter.png" alt="" />
+                                    <a href="https://www.twitter.com" title="Twitter" class="Footer_Link" target="_blank">Twitter</a></li>
+                                <li>
+                                    <img src="image/google.png" alt="" />
+                                    <a href="https://plus.google.com/" title="Google Plus" class="Footer_Link" target="_blank">Google+</a></li>
+                                <li>
+                                    <img src="image/instgram.png" alt="" />
+                                    <a href="http://www.instagram.com/" title="Instagram" class="Footer_Link" target="_blank">Instagram</a></li>
+                                <li>
+                                    <img src="image/pinterest.png" alt="" />
+                                    <a href="http://www.pinterest.com/" title="Pinterest" class="Footer_Link" target="_blank">Pinterest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="Footer_AltKisim">
+                    <img src="Image/Footer_Altkisim.png" title="Kapıda Ödeme" />
+                    <br />
+                    <a href="http://www.fcyazilim.com" target="_blank" title="Gelişimsoft Yazılım Hizmetleri">
+                        <img src="Image/logo_alt.jpg" alt="Gelişimsoft Yazılım Hizmetleri" width="120" height="40" /></a>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</body>
+</html>

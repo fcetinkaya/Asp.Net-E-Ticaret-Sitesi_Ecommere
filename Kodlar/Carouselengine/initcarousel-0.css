@@ -1,0 +1,127 @@
+.amazingcarousel-0 .amazingcarousel-image {
+    position: relative;
+    padding: 0px;
+}
+
+    .amazingcarousel-0 .amazingcarousel-image img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        border: 0;
+        margin: 0;
+        padding: 0;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        border-radius: 0px;
+    }
+
+.amazingcarousel-0 .amazingcarousel-title {
+    position: relative;
+    font: bold 12px 'Open Sans', sans-serif;
+    color: #333333;
+    margin: 6px;
+    text-align: left;
+    line-height: 14px;
+    height: 35px;
+    overflow: hidden;
+}
+.amazingcarousel-0 .amazingcarousel-title_alt {
+    position: relative;
+    font: bold 12px 'Open Sans', sans-serif;
+    color: #333333;
+    margin: 6px;
+    text-align: left;
+    line-height: 14px;
+    height: 14px;
+    overflow: hidden;
+}
+.amazingcarousel-title a {
+     font: bold 12px 'Open Sans', sans-serif;
+    color: #333333;
+    text-decoration: none;
+}
+
+.amazingcarousel-title:hover {
+    text-decoration: underline;
+}
+
+.amazingcarousel-0 .amazingcarousel-description {
+    position: relative;
+    font: 12px 'Open Sans', sans-serif;
+    color: #333333;
+    margin: 6px;
+    text-align: left;
+    line-height: 14px;
+    height: 28px;
+    overflow: hidden;
+}
+
+.amazingcarousel-0 .amazingcarousel-Indirim {
+    position: relative;
+    font: 13px 'Open Sans', sans-serif;
+    color: red;
+    margin: 6px;
+    text-align: left;
+    line-height: 14px;
+    height: 28px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+/* carousel */
+
+.amazingcarousel-container-0 {
+    padding: 10px 60px;
+}
+
+.amazingcarousel-0 .amazingcarousel-list-container {
+    padding: 16px 0;
+}
+
+/* item */
+
+.amazingcarousel-0 .amazingcarousel-item-container {
+    text-align: center;
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    -moz-box-shadow: 0px 0px 5px 1px rgba(96, 96, 96, 0.1);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(96, 96, 96, 0.1);
+    box-shadow: 0px 0px 5px 1px rgba(96, 96, 96, 0.1);
+}
+
+/* arrows */
+
+.amazingcarousel-0 .amazingcarousel-prev {
+    left: 0%;
+    top: 50%;
+    margin-left: -60px;
+    margin-top: -24px;
+}
+
+.amazingcarousel-0 .amazingcarousel-next {
+    right: 0%;
+    top: 50%;
+    margin-right: -60px;
+    margin-top: -24px;
+}
+
+/* navigation bullets */
+
+.amazingcarousel-0 .amazingcarousel-nav {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+}
+
+.amazingcarousel-0 .amazingcarousel-bullet-wrapper {
+    margin: 4px auto;
+}
+
+/* hide navigation on mobile */
+
+@media (max-width: 600px) {
+    .amazingcarousel-0 .amazingcarousel-nav {
+        display: none;
+    }
+}

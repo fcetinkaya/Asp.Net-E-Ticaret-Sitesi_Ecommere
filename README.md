@@ -9,73 +9,69 @@
 
 ## MODÜLLER ##
 
-• Anasayfa
-• Hakkımızda
-• Banka Hesapları
-• Tedairkçi Başvurusu
-• İletişim
-• Kargo Bilgileri
-
-• Kurumsal Satış
-
-• Sipariş Takip
-
-• Ödeme Bildirim Formu
-
-• İade / Değişim Formu
-• Satış Sözleşmesi
-• Ödeme Seçenekleri
-• Kargo Takibi
-• Güvenli E- Ticaret
-• Üyelik Sözleşmesi
-• Koşulsuz İade
-• Üyelik İşlemleri (Üyel Ol ve Giriş Sayfaları)
-• Üyelik İşlemleri (Sosyal Medya Hesabı İle Giriş/Üye Olma)
-• Üyelik İşlemleri – Sepetiniz
-• Üyelik İşlemleri – Sipariş Takip
-• Üyelik İşlemleri – Kargo Takip
-• Üyelik İşlemleri – Kurye Takip
-• Üyelik İşlemleri – Ödeme Bildirim Formu
-• Üyelik İşlemleri - İade/Değişim Formu
-• Yönetim Paneli - Kategori İşlemleri
-• Yönetim Paneli - Kategori Düzenleme
-• Yönetim Paneli - Ürün Ekleme
-• Yönetim Paneli - Ürün Düzenleme
-• Yönetim Paneli - Ürün Silme
-• Yönetim Paneli - Ürün Kopyalama
-• Yönetim Paneli - Ürün Resim Ekleme
-• Yönetim Paneli - Ürün Taksitlendirme
-• Yönetim Paneli - Ürün Listesi
-• Yönetim Paneli - Yeni Siparişler
-• Yönetim Paneli - Bekleyen Siparişler
-• Yönetim Paneli - Tamamlanan Siparişler
-• Yönetim Paneli - İptal Edilen Siparişler
-• Yönetim Paneli - İade Edilen Siparişler
-• Yönetim Paneli - Ödeme Bildirimleri
-• Yönetim Paneli - Kargo İşlemleri
-• Yönetim Paneli - Kurye İşlemleri
-• Yönetim Paneli - Ürün Talepleri
-• Yönetim Paneli - İade Değişim Bildirimleri
-• Yönetim Paneli - Yeni Siparişler (Hemen Al)
-• Yönetim Paneli - Bekleyen Siparişler (Hemen Al)
-• Yönetim Paneli - Tamamlanan Siparişler (Hemen Al)
-• Yönetim Paneli - İptal Edilen Siparişler (Hemen Al)
-• Yönetim Paneli - İade Edilen Siparişler (Hemen Al)
-• Yönetim Paneli - İade Değişim Bildirimleri (Hemen Al)
-• Yönetim Paneli - Kargo İşlemleri (Hemen Al)
-• Yönetim Paneli - Kurye İşlemleri (Hemen Al)
-• Yönetim Paneli - E-Bülten Üye Listesi
-• Yönetim Paneli - Excel&#39;den Toplu Aktar
-• Yönetim Paneli - Stokda Kalmayan Ürünler
-• Yönetim Paneli - Stokda Kalmayan Ürünler Listesi
-• Yönetim Paneli - Satışı Yapılmayacak Ürünler
-• Yönetim Paneli - Satışı Yapılmayacak Ürünler Listesi
-• Yönetim Paneli - Üye Yönetimi
-• Yönetim Paneli - Silinen Ürünler
-• Yönetim Paneli - Anasayfa Haber Sistemi
-• Yönetim Paneli - Şifre İşlemleri
-• Yönetim Paneli - Mesaj Gönder
-• Yönetim Paneli - İletişim Mesajları
+• Anasayfa<br />
+• Hakkımızda<br />
+• Banka Hesapları<br />
+• Tedairkçi Başvurusu<br />
+• İletişim<br />
+• Kargo Bilgileri<br />
+• Kurumsal Satış<br />
+• Sipariş Takip<br />
+• Ödeme Bildirim Formu<br />
+• İade / Değişim Formu<br />
+• Satış Sözleşmesi<br />
+• Ödeme Seçenekleri<br />
+• Kargo Takibi<br />
+• Güvenli E- Ticaret<br />
+• Üyelik Sözleşmesi<br />
+• Koşulsuz İade<br />
+• Üyelik İşlemleri (Üyel Ol ve Giriş Sayfaları)<br />
+• Üyelik İşlemleri (Sosyal Medya Hesabı İle Giriş/Üye Olma)<br />
+• Üyelik İşlemleri – Sepetiniz<br />
+• Üyelik İşlemleri – Sipariş Takip<br />
+• Üyelik İşlemleri – Kargo Takip<br />
+• Üyelik İşlemleri – Kurye Takip<br />
+• Üyelik İşlemleri – Ödeme Bildirim Formu<br />
+• Üyelik İşlemleri - İade/Değişim Formu<br />
+• Yönetim Paneli - Kategori İşlemleri<br />
+• Yönetim Paneli - Kategori Düzenleme<br />
+• Yönetim Paneli - Ürün Ekleme<br />
+• Yönetim Paneli - Ürün Düzenleme<br />
+• Yönetim Paneli - Ürün Silme<br />
+• Yönetim Paneli - Ürün Kopyalama<br />
+• Yönetim Paneli - Ürün Resim Ekleme<br />
+• Yönetim Paneli - Ürün Taksitlendirme<br />
+• Yönetim Paneli - Ürün Listesi<br />
+• Yönetim Paneli - Yeni Siparişler<br />
+• Yönetim Paneli - Bekleyen Siparişler<br />
+• Yönetim Paneli - Tamamlanan Siparişler<br />
+• Yönetim Paneli - İptal Edilen Siparişler<br />
+• Yönetim Paneli - İade Edilen Siparişler<br />
+• Yönetim Paneli - Ödeme Bildirimleri<br />
+• Yönetim Paneli - Kargo İşlemleri<br />
+• Yönetim Paneli - Kurye İşlemleri<br />
+• Yönetim Paneli - Ürün Talepleri<br />
+• Yönetim Paneli - İade Değişim Bildirimleri<br />
+• Yönetim Paneli - Yeni Siparişler (Hemen Al)<br />
+• Yönetim Paneli - Bekleyen Siparişler (Hemen Al)<br />
+• Yönetim Paneli - Tamamlanan Siparişler (Hemen Al)<br />
+• Yönetim Paneli - İptal Edilen Siparişler (Hemen Al)<br />
+• Yönetim Paneli - İade Edilen Siparişler (Hemen Al)<br />
+• Yönetim Paneli - İade Değişim Bildirimleri (Hemen Al)<br />
+• Yönetim Paneli - Kargo İşlemleri (Hemen Al)<br />
+• Yönetim Paneli - Kurye İşlemleri (Hemen Al)<br />
+• Yönetim Paneli - E-Bülten Üye Listesi<br />
+• Yönetim Paneli - Excel&#39;den Toplu Aktar<br />
+• Yönetim Paneli - Stokda Kalmayan Ürünler<br />
+• Yönetim Paneli - Stokda Kalmayan Ürünler Listesi<br />
+• Yönetim Paneli - Satışı Yapılmayacak Ürünler<br />
+• Yönetim Paneli - Satışı Yapılmayacak Ürünler Listesi<br />
+• Yönetim Paneli - Üye Yönetimi<br />
+• Yönetim Paneli - Silinen Ürünler<br />
+• Yönetim Paneli - Anasayfa Haber Sistemi<br />
+• Yönetim Paneli - Şifre İşlemleri<br />
+• Yönetim Paneli - Mesaj Gönder<br />
+• Yönetim Paneli - İletişim Mesajları<br />
 
 
 > **www.gelisimsoft.com <br /> info@gelisimsoft.com**

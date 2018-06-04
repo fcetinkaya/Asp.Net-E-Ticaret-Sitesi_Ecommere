@@ -10,16 +10,18 @@
 ## MODÜLLER ##
 
 • Anasayfa
-
 • Hakkımızda
-
 • Banka Hesapları
 • Tedairkçi Başvurusu
 • İletişim
 • Kargo Bilgileri
+
 • Kurumsal Satış
+
 • Sipariş Takip
+
 • Ödeme Bildirim Formu
+
 • İade / Değişim Formu
 • Satış Sözleşmesi
 • Ödeme Seçenekleri

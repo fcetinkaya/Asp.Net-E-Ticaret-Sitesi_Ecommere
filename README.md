@@ -5,7 +5,7 @@
 </p>
 
 ## GİRİŞ BİLGİLERİ ##
-> **Kullanıcı adı	:** admin <br />  **Şifre		:** demo 
+> **Kullanıcı adı	:** info@gelisimsoft.com <br />  **Şifre		:** demo 
 
 ## MODÜLLER ##
 

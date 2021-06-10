@@ -72,6 +72,3 @@
 • Yönetim Paneli - Şifre İşlemleri<br />
 • Yönetim Paneli - Mesaj Gönder<br />
 • Yönetim Paneli - İletişim Mesajları<br />
-
-
-> **www.gelisimsoft.com <br /> info@gelisimsoft.com**
